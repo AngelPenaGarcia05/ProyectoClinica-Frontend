@@ -1,0 +1,254 @@
+
+.navbar {
+    background-color: #eff9f9;
+    padding: 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    max-width: 70px;
+    margin-right: 10px;
+}
+
+.navbar-brand h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #002e5e;
+}
+
+.navbar-brand h1 span {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-link {
+    color: #000;
+    font-size: 18px;
+    font-weight: 450;
+    transition: color all 0.3s, font-weight all 0.3s;
+}
+
+.nav-link:hover {
+    color: #002e5e;
+    font-weight: 600;
+    transform: scale(1.1);
+
+}
+
+.btn-login {
+    background-color: #002e5e;
+    color: #01CFC9;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-size: 16px;
+}
+
+.btn-login:hover {
+    background-color: #006080;
+}
+
+.subtitulos {
+    margin: auto;
+    padding: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.subtitulos .btn-login-alt {
+    background: linear-gradient(90deg, #002e5e, #4f6a7b);
+    /* Gradiente de #002e5e a un gris más claro */
+    color: white;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.subtitulos .btn-login-alt:hover {
+    transform: scale(1.1);
+
+}
+
+.datos {
+    margin-top: 40px;
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+}
+
+.telefono u {
+    color: #002e5e;
+    font-weight: 500;
+}
+
+.datos .ubicacion u {
+    text-decoration: none;
+    font-weight: 500;
+
+
+}
+
+.promociones {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px
+}
+
+.promociones img {
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+
+}
+
+.servicios {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.servicios h4 {
+    color: #01CFC9;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.servicios h1 {
+    color: #002e5e;
+    font-weight: 750;
+}
+
+.tratamientos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.tratamientos .box1 {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    background-color: #0F2650;
+    border-radius: 20px;
+}
+
+.tratamientos .box1 .titulo {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #01CFC9
+}
+
+.tratamientos .box1 p {
+    color: white;
+    text-align: center;
+
+}
+
+.tratamientos .box1 img {
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+.tratamientos .box2 {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 250px;
+    width: 250px;
+    border: 1px solid #01CFC9;
+    border-radius: 20px;
+}
+
+.tratamientos .box2 .titulo {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #01CFC9
+}
+
+.tratamientos .box2 p {
+    color: black;
+    text-align: center;
+
+}
+
+.tratamientos .box2 img {
+    margin-top: 7px;
+    height: 115px;
+    width: 115px;
+}
+.botonmas{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+.botonmas .btn-reserva {
+    background: linear-gradient(60deg, #002e5e, #4f6a7b);
+    color: #01CFC9;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    height: 60px;
+    width: 180px;
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+}
+
+
+@media (max-width: 991px) {
+    .navbar-brand h1 {
+        font-size: 20px;
+    }
+
+    .navbar-brand h1 span {
+        font-size: 16px;
+    }
+
+    .btn-login {
+        padding: 6px 16px;
+        font-size: 14px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .promociones {
+        flex-direction: column;
+    }
+
+    .datos {
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .tratamientos {
+        flex-direction: column;
+    }
+}
